@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <h1>temperature converter</h1>
+    <input type="number" id="celsi">
+    <input type="number" id="kelvin">
+    <p id="convertedTemp"></p>
+    <div><button>submit</button></div>
+</body>
+
+
+
+
+
+
+<script>
+       let celsius = document.getElementById("celsi");
+    let convertedTemp = document.getElementById("convertedTemp");
+     let kelvin = document.getElementById("kelvin")
+
+    celsi.addEventListner('input',function(){
+    let temperature = celsi.Value;
+    let convert = Number(temperature  + 273.15)
+    kelvin.value = convert
+    convertedTmp.textcontent = convert
+    });
+
+
+    kelvin.addEventListner('input',function(){
+    let temp = kelvin.Value;
+    let convert = (Number(temperature  + 273.15))
+    kelvin.value = convert
+    convertedTmp.textcontent = convert
+    })
+ 
+</script>
+</html>
